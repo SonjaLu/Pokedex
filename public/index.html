@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="elementcolor.css">
+    <link rel='icon' type="image/png" href="./img/pokedex.png">
+    <script src="script.js"></script>
+    <script src="templates.js"></script>
+</head>
+<body onload="loadAllPokemon()">
+    <div id="overlay"></div>
+    <div id="around">
+    <header>
+        <div class="navbar">
+            <div><img class="letters" src="./img/pokemon_logo.svg"></div>
+        <div class="inputbox"><input required id="search-input" maxlength="2" onkeyup="searchByName()" class="inputfield" type="text" placeholder="search by first 2 letters of name"></div>
+   <button id="restart" class="restart d-none" onclick="refresh()">Back to start</button>
+    </div>
+</header>
+    <main id="overview"></main>
+</div>
+   <div class="pokedex d-none" id="pokedex"></div>
+
+
+</body>
+</html>
