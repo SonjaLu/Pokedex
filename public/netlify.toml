@@ -1,0 +1,4 @@
+[build]
+  base = "Pokedex/"
+  publish = "Pokedex/public/"
+  command = "echo 'Deploying'"
